@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer base {
+  button {
+    @apply bg-transparent border-none p-0 font-medium cursor-pointer;
+  }
+}
