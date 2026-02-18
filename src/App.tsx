@@ -13,7 +13,7 @@ function App() {
   // const [finishedCount, setFinishedCount] = useState(0);
   const [notes, setNotes] = useState<Note[]>([]);
   const size = useWindowResize();
-  const { data, loading } = useFetch(
+  const { data, loading } = useFetch<Note[]>(
     "https://jsonplaceholder.typicode.com/todos",
   );
 
